@@ -137,7 +137,7 @@ export default {
   },
   methods: {
     performOnComplete(evt) {
-      AmplifyEventBus.$emit("chatComplete", this.options.botTitle);
+      AmplifyEventBus.$emit("chatComplete", evt);
       if (this.options.clearComplete) {
         this.messages = [];
       }
